@@ -1,0 +1,22 @@
+[
+	{
+		"id": "c4rrus",
+		"title": "c4rrus",
+		"excerpt": "C4rrus adalah platform booking rental mobil ...",
+		"description": "C4rrus adalah platform booking rental mobil berbasis web yang memungkinkan pengguna untuk mencari, memilih, dan melakukan reservasi kendaraan secara online dengan mudah. Aplikasi ini dirancang dengan pendekatan modern menggunakan arsitektur frontend yang ringan dan responsif, serta mengimplementasikan sistem form handling untuk komunikasi langsung dengan pemilik layanan.",
+		"date": "17 Mar 2025",
+		"author": "Kevin Taniar",
+		"image": "c4rrus.png",
+		"link": "#"
+	},
+	{
+		"id": "webgame",
+		"title": "Ucup Menjelajah Nusantara",
+		"excerpt": " Ucup Menjelajah Nusantara adalah game petualangan edukatif ...",
+		"description": "Ucup Menjelajah Nusantara adalah game petualangan edukatif berbasis web yang dibuat menggunakan React.js. Pemain mengendalikan karakter bernama Ucup untuk menjelajah berbagai wilayah Indonesia seperti rumah, pasar, pantai, hutan, dan tambang. Game ini menggabungkan eksplorasi, manajemen status, minigame, dan sistem inventory dalam satu pengalaman petualangan seru.",
+		"date": "15 Mar 2025",
+		"author": "Kevin Taniar",
+		"image": "webgame.png",
+		"link": "#"
+	}
+]
