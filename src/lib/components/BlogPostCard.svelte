@@ -10,12 +10,12 @@
 		<h3 class="text-2xl font-semibold">
 			{post.title}
 		</h3>
-		<p class="text-sm uppercase tracking-[0.2em] text-white/60">{post.date} · {post.author}</p>
-		<p class="text-sm text-white/80">{post.excerpt}</p>
+		<p class="text-sm uppercase tracking-[0.2em] text-slate-500">{post.date} · {post.author}</p>
+		<p class="text-sm text-slate-600">{post.excerpt}</p>
 	</div>
 	<button
 		type="button"
-		class="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-amber-300 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 transition hover:bg-amber-200"
+		class="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-950 transition hover:bg-slate-100"
 		onclick={() => onReadMore?.(post)}
 	>
 		Read More
