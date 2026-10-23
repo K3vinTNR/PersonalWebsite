@@ -21,8 +21,8 @@
 <header class="site-header">
 	<div class="container header-inner">
 		<a class="brand" href={`/${locale}#top`} aria-label={profile.name} onclick={() => menuOpen = false}>
-			<span class="brand-monogram" aria-hidden="true">k<span>.</span></span>
 			<span>{profile.name}</span>
+			<span class="brand-caption" aria-hidden="true">/ {locale === 'id' ? 'Portofolio' : 'Portfolio'}</span>
 		</a>
 		<nav class="desktop-navigation" aria-label={copy.nav.label}>
 			{#each sections as section}

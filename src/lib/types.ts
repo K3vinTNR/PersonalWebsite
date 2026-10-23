@@ -12,17 +12,28 @@ export type BlogPost = {
 export type Locale = 'id' | 'en';
 export type LocalizedText = Record<Locale, string>;
 
+export type ProjectImage = {
+	src: string;
+	srcset?: string;
+	width: number;
+	height: number;
+	alt: LocalizedText;
+};
+
 export type PortfolioProject = {
 	id: string;
 	title: string;
-	year: string;
+	year: string | null;
 	category: LocalizedText;
 	description: LocalizedText;
 	contribution: LocalizedText | null;
 	technologies: string[];
-	image: { src: string; srcset: string; width: number; height: number; alt: LocalizedText };
+	image: ProjectImage;
+	screenshots?: (ProjectImage & { caption: LocalizedText })[];
+	gallery?: (ProjectImage & { caption: LocalizedText })[];
 	repositoryUrl: string | null;
 	demoUrl: string | null;
+	demoLabel?: LocalizedText;
 };
 
 export type ContactValues = { name: string; email: string; message: string };

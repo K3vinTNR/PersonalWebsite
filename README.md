@@ -2,6 +2,8 @@
 
 Portofolio satu halaman dengan SvelteKit 2, Svelte 5, TypeScript, dan Tailwind 4. Bahasa Indonesia berada di `/id`, bahasa Inggris di `/en`; `/` menuju `/id`.
 
+Tampilan menggunakan Arial/Helvetica dari perangkat, warna putih, hitam, dan abu-abu, serta navigasi anchor dalam satu halaman. Tidak ada pengambilan font eksternal. Warna asli pada screenshot proyek tetap dipertahankan.
+
 ## Menjalankan lokal
 
 Gunakan Node.js 22.19 atau lebih baru.
@@ -14,12 +16,14 @@ npm run dev
 ## Mengganti materi awal
 
 - `src/lib/data/portfolio.ts`: identitas, foto, pendidikan, proyek, pengalaman, keahlian, email, dan tautan profesional. Teks yang diterjemahkan memiliki pasangan `id` dan `en`.
-- `src/lib/data/copy.ts`: judul pembuka, navigasi, label, metadata, pesan formulir, dan penanda materi awal dalam kedua bahasa.
+- `src/lib/data/copy.ts`: judul bagian, navigasi, label, metadata, dan pesan formulir dalam kedua bahasa.
 - `static/images/`: gambar yang dirujuk oleh data portofolio. Gunakan gambar terkompresi, isi dimensi aslinya, dan sediakan versi 720/1440 piksel melalui `srcset` untuk proyek.
 
-Data awal berasal dari profil dan dua proyek yang sebelumnya tersedia. Rincian kontribusi belum diberikan; isi `contribution` dan tautan proyek saat tersedia. Properti `repositoryUrl` / `demoUrl` yang bernilai `null` menyembunyikan tautan. Daftar `experience` yang kosong menyembunyikan pengalaman.
+Daftar proyek mencakup c4rrus, Ucup Menjelajah Nusantara, Cyber Lockdown, Klipify, dan Drowsiness Detection. Rincian kontribusi belum diberikan; isi `contribution` dan tautan proyek saat tersedia. Properti `repositoryUrl` / `demoUrl` yang bernilai `null` menyembunyikan tautan. Label tombol khusus diatur melalui `demoLabel`, sedangkan `year: null` menyembunyikan tahun yang belum diketahui. Daftar `experience` yang kosong menyembunyikan pengalaman.
 
-Setelah materi final dimasukkan, ganti penanda awal pada `about.draft` dan lengkapi kontribusi proyek. Keterangan materi awal harus tetap jelas selama konten belum final.
+Drowsiness Detection memiliki tiga gambar pada properti `gallery`: evaluasi performa, LIME, dan SHAP. Galeri mendukung tombol sebelumnya/berikutnya, pilihan gambar, tombol panah keyboard saat kontrol mendapat fokus, serta geser horizontal. Gambar ditampilkan utuh dan dapat dibuka dalam ukuran penuh. Cyber Lockdown memakai properti `screenshots` untuk menampilkan menu utama, eksplorasi fasilitas, dan arsip puzzle dalam susunan tiga gambar. Proyek tanpa kedua properti tersebut menampilkan satu gambar.
+
+Kontribusi yang belum diisi tidak ditampilkan. Tambahkan hanya rincian yang telah dikonfirmasi pemilik portofolio.
 
 ### CV PDF
 
